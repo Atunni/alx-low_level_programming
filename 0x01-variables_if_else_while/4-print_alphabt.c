@@ -2,7 +2,7 @@
 
 /**
  * main - prints all alphabet except q and e
- *return: returns 0
+ *Return: returns 0
  */
 
 int main(void)
@@ -10,12 +10,18 @@ int main(void)
 	char lw;
 
 	for (lw = 'a'; lw <= 'z'; lw++)
-
 	{
-		if (lw ! = 'q' && lw ! = 'e')
-			putchar(lw)
+		if (lw != 'e' && lw != 'q')
+		{
+			putchar(lw);
+		}
+		else
+		{
+		}
 	}
 
 	putchar('\n');
 
 	return (0);
+
+}
