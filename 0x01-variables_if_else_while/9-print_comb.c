@@ -1,33 +1,25 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- * main - prints all possible combinations of single-digit numbers
- *Return: Return 0
+ * main - Entry point
+ * Description: prints numbers
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int c, i;
+	int i;
 
-	for (c = '0'; c <= '9'; c++)
+	for (i = '0'; i <= '9' ; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
-		{
-			if (c < i)
-			{
-				putchar(c);
-				putchar(i);
+		putchar(i);
 
-				if (c != '8' || (c == '8' && i != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
 	putchar('\n');
-
 	return (0);
 }
