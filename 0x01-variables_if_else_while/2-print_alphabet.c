@@ -7,13 +7,12 @@
 
 int main(void)
 {
-	char LC
+	char c;
 
-	for (char LC = 'a'; LC <= 'z'; LC++)
+	for (char c = 'a'; c <= 'z'; c++)
 	{
-		putchar("lc)
+		putchar("c")
 	}
 	putchar('/n');
 	return (0);
-
 }
