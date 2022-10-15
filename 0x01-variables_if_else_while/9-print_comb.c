@@ -7,19 +7,27 @@
 
 int main(void)
 {
-	int f;
+	int c, i;
 
-	for (f = '0'; f <= '9'; f++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar ((f % 10) + '0');
-		if (f == 9)
-			continue;
+		for (i = '0'; i <= '9'; i++)
+		{
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
 
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
 
-	putchar (',');
-	putchar ('\n');
+	putchar('\n');
 
 	return (0);
 }
-
