@@ -18,4 +18,6 @@ int _isalpha(int c)
 	else
 		x = 0;
 
+	return (x);
+
 }
