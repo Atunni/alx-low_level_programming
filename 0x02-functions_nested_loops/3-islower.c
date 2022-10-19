@@ -2,20 +2,23 @@
 
 /**
  * _islower - prints funtion that print lower case character
- * @c: The character to be checked
- *Return: returns 1 if character is lowercase and 0 if otherwise
+ * @c: c
+ *
+ *Return: int
  */
 
 int _islower(int c)
 {
-	int c;
+	int x;
 
-	for (c = 'a' && c <= 'z')
-	{
-		return (1);
-	}
+	for (c >= 'a' && c <= 'z')
+		x = 1;
+
 	else
-	{
-		return (0);
-	}
+
+		x = 0;
+
+	return (x);
+
+
 }
